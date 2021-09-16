@@ -1,12 +1,12 @@
 {
-  "name": "chess-ninja",
+  "name": "chessarium",
   "version": "0.0.1",
   "private": true,
   "type": "module",
   "engines": {
     "node": "14.x"
   },
-  "homepage": "https://chess-ninja.ru/",
+  "homepage": "https://chessarium.ru/",
   "scripts": {
     "start": "webpack serve --mode=development --config webpack.config.js",
     "build:dev": "webpack --mode=development --config webpack.config.js",
