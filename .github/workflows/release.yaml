@@ -22,7 +22,7 @@ jobs:
         run: npm ci
       - name: Linting
         run: npm run lint
-  build:
+  deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -43,4 +43,4 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deploy
-        run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . root@31.172.66.189:/var/html/chessarium.ru/html/
+        run: cd dist && rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . root@31.172.66.189:/var/www/chessarium.ru/html/
