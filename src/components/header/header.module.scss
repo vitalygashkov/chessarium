@@ -1,0 +1,40 @@
+.header {
+  height: 110px;
+  position: fixed;
+  background-color: #fff6f1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContent {
+  width: 1160px;
+  display: flex;
+  align-items: center;
+}
+
+.navMenu {
+  margin-left: 40px;
+  display: flex;
+}
+
+.navMenuItem {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 0 20px;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.navMenuItemActive {
+  color: rgba(0, 0, 0, 1);
+}
+
+.actions {
+  margin-left: auto;
+}

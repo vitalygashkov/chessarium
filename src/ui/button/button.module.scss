@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 50px;
+  border: none;
+  padding: 16px 34px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  transition: background-color 0.2s;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.buttonPrimary {
+  background-color: #ff8c4b;
+  &:hover {
+    background-color: rgba(255, 140, 75, 0.8);
+  }
+}
