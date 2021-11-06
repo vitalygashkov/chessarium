@@ -16,15 +16,6 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
-      <div style={{ fontSize: 50 }}>Онлайн-курс по шахматам</div>
     </div>
   );
 }
