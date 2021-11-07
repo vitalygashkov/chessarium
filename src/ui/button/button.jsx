@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import styles from './button.module.scss';
 
 export default function Button({ children, type }) {
@@ -8,8 +7,3 @@ export default function Button({ children, type }) {
     </button>
   );
 }
-
-Button.propTypes = {
-  children: PropTypes.node,
-  type: PropTypes.oneOf(['default', 'primary']),
-};

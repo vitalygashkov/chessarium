@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './header.module.scss';
-import { Logo } from '../../ui/logo';
-import { Button } from '../../ui/button';
+import { Logo, Button } from '../../ui/logo';
 
 export default function Header() {
   const [isHeaderCompact, setIsHeaderCompact] = useState(false);
@@ -24,7 +23,7 @@ export default function Header() {
   const navLinks = [
     { label: 'Главная', route: '/' },
     { label: 'Курсы', route: '/courses' },
-    { label: 'Учебники', route: '/studybooks' },
+    { label: 'Учебники', route: '/textbooks' },
     { label: 'Контакты', route: '/contacts' },
     { label: 'О нас', route: '/about' },
   ];
