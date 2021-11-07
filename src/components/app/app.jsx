@@ -1,18 +1,19 @@
+import { Route, Routes } from 'react-router-dom';
 import styles from './app.module.scss';
 import { Header } from '../header';
 import { Footer } from '../footer';
-import { Landing } from '../../pages/landing';
+import { Home } from '../../pages/home';
 
-function App() {
+export default function App() {
   return (
     <div className={styles.app}>
       <Header />
       <div className={styles.appContent}>
-        <Landing />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </div>
       <Footer />
     </div>
   );
 }
-
-export default App;

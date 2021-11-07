@@ -1,7 +1,7 @@
-import styles from './landing.module.scss';
+import styles from './home.module.scss';
 import { Button } from '../../ui/button';
 
-function Landing() {
+export default function Home() {
   return (
     <div className={styles.landing}>
       <div className={styles.promo}>
@@ -19,5 +19,3 @@ function Landing() {
     </div>
   );
 }
-
-export default Landing;

@@ -1,7 +1,7 @@
 import styles from './footer.module.scss';
 import { Logo } from '../../ui/logo';
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
@@ -29,5 +29,3 @@ function Footer() {
     </footer>
   );
 }
-
-export default Footer;

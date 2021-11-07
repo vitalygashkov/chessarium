@@ -1,12 +1,15 @@
 import { StrictMode } from 'react';
 import { render } from 'react-dom';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 
+import './index.css';
 import { App } from './components/app';
 
 render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
   document.getElementById('root')
 );
