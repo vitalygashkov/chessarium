@@ -1,23 +1,21 @@
-import styles from './landing.module.scss';
+import styles from './home.module.scss';
 import { Button } from '../../ui/button';
+import { PageContent } from '../../components/layout';
 
-function Landing() {
+export default function Home() {
   return (
-    <div className={styles.landing}>
+    <div className={styles.home}>
       <div className={styles.promo}>
-        <div className={styles.promoContent}>
+        <PageContent className={styles.promoContent}>
           <div className={styles.promoCaption}>
             Тренируйся. Учись. Играй. <br />
             Развивай свои навыки
           </div>
-          {/*<div className="promo__description"></div>*/}
-          <div className="promo__actions">
+          <div>
             <Button>Начать обучение</Button>
           </div>
-        </div>
+        </PageContent>
       </div>
     </div>
   );
 }
-
-export default Landing;

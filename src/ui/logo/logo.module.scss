@@ -1,6 +1,59 @@
 .logo {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  column-gap: 12px;
+  line-height: 1;
+  width: fit-content;
+}
+
+// Title
+
+.logoTitle {
+  margin: 0;
   font-size: 28px;
   font-weight: 800;
-  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-logo);
+  align-self: center;
+}
+
+@media (max-width: 736px) {
+  .logoTitle {
+    font-size: 24px;
+  }
+}
+
+// Image
+
+.logoImage {
+  grid-row: span 2;
+}
+
+@media (min-width: 736px) {
+  .logoImage {
+    height: 43px;
+  }
+}
+
+@media (max-width: 736px) {
+  .logoImage {
+    height: 33px;
+  }
+}
+
+// Subtitle
+
+.logoSubitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+  opacity: 0.3;
+  font-family: var(--font-logo);
+  align-self: center;
+  text-align: right;
+}
+
+@media (max-width: 736px) {
+  .logoSubitle {
+    font-size: 13px;
+  }
 }

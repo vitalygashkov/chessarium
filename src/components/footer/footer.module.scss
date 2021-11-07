@@ -1,12 +1,12 @@
 .footer {
-  height: 380px;
+  min-height: 380px;
   background-color: #fff6f1;
   display: flex;
   justify-content: center;
+  margin-top: auto;
 }
 
 .footerContent {
-  width: 1160px;
   padding-top: 105px;
   padding-bottom: 80px;
   display: flex;

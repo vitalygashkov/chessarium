@@ -1,18 +1,18 @@
-import styles from './app.module.scss';
-import { Header } from '../header';
-import { Footer } from '../footer';
-import { Landing } from '../../pages/landing';
+import { Route, Routes } from 'react-router-dom';
+import { Home, Courses, Textbooks, Contacts, About, NotFound } from '../../pages';
+import { Layout } from '../layout';
 
-function App() {
+export default function App() {
   return (
-    <div className={styles.app}>
-      <Header />
-      <div className={styles.appContent}>
-        <Landing />
-      </div>
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/textbooks" element={<Textbooks />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 }
-
-export default App;
