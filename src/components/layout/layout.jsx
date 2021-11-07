@@ -7,10 +7,10 @@ export default function Layout() {
   return (
     <div className={styles.layout}>
       <Header />
-      <div className={styles.layoutPage}>
+      <div className={styles.layoutContent}>
         <Outlet />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

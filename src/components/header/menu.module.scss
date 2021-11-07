@@ -1,0 +1,89 @@
+// Menu
+
+.menu {
+  display: flex;
+}
+
+@media (max-width: 736px) {
+  .menu {
+    display: grid;
+  }
+}
+
+// Menu Button
+
+@media (max-width: 736px) {
+  .menuButton {
+    z-index: 1;
+    display: block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    background-color: #292929;
+    height: 43px;
+    width: 43px;
+    border-radius: 43px;
+    border: none;
+    margin-top: 35px;
+    margin-right: 25px;
+    color: #ffffff;
+    font-size: 32px;
+    justify-self: end;
+    transition: margin 0.2s;
+  }
+}
+
+@media (min-width: 736px) {
+  .menuButton {
+    display: none;
+  }
+}
+
+// Menu List
+
+.menuList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+@media (max-width: 736px) {
+  .menuList {
+    display: none;
+    row-gap: 10px;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    padding-left: 70px;
+    box-shadow: 0 12px 12px rgb(97 97 97 / 8%), 0 24px 24px rgb(97 97 97 / 8%);
+  }
+
+  .menuListVisible {
+    display: grid;
+  }
+}
+
+@media (min-width: 736px) {
+  .menuList {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 40px;
+  }
+}
+
+// Menu Link
+
+.menuLink {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: color 0.2s;
+  &:hover {
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+.menuLinkActive {
+  color: rgba(0, 0, 0, 1);
+}

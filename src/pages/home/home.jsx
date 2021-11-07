@@ -4,7 +4,7 @@ import { PageContent } from '../../components/layout';
 
 export default function Home() {
   return (
-    <div className={styles.landing}>
+    <div className={styles.home}>
       <div className={styles.promo}>
         <PageContent className={styles.promoContent}>
           <div className={styles.promoCaption}>

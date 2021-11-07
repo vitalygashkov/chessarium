@@ -1,3 +1,15 @@
-.layoutContent {
-  width: 1160px;
+.pageContent {
+  width: 100%;
+}
+
+@media (max-width: 736px) {
+  .pageContent {
+    padding: 0 28px;
+  }
+}
+
+@media (min-width: 736px) {
+  .pageContent {
+    padding: 0 140px;
+  }
 }
