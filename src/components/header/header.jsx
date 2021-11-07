@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './header.module.scss';
-import { Logo, Button } from '../../ui/logo';
+import { Logo, Button } from '../../ui';
+import { PageContent } from '../layout';
 
 export default function Header() {
   const [isHeaderCompact, setIsHeaderCompact] = useState(false);
@@ -30,7 +31,7 @@ export default function Header() {
 
   return (
     <header className={`${styles.header} ${isHeaderCompact ? styles.headerCompact : ''}`}>
-      <div className={styles.headerContent}>
+      <PageContent className={styles.headerContent}>
         <Logo />
         <div className={styles.navMenu}>
           {navLinks.map((link) => (
@@ -48,7 +49,7 @@ export default function Header() {
         <div className={styles.actions}>
           <Button type="primary">Оставить заявку</Button>
         </div>
-      </div>
+      </PageContent>
     </header>
   );
 }

@@ -1,10 +1,11 @@
 import styles from './footer.module.scss';
-import { Logo } from '../../ui/logo';
+import { Logo } from '../../ui';
+import { PageContent } from '../layout';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerContent}>
+      <PageContent className={styles.footerContent}>
         <div className={styles.footerColumn}>
           <Logo />
           <div className={styles.policy}>
@@ -25,7 +26,7 @@ export default function Footer() {
             <div className={styles.contactEmail}>info@chessarium.ru</div>
           </div>
         </div>
-      </div>
+      </PageContent>
     </footer>
   );
 }
